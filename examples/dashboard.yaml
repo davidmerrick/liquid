@@ -1,0 +1,33 @@
+title: Liquid
+views:
+  - title: Home
+    path: home
+    panel: true
+    cards:
+      - type: custom:liquid-dashboard-card
+        title: Home
+        home_mode_entity: input_select.home_mode
+        thermostat_entity: climate.thermostat
+        sections:
+          - title: Security
+            accent: blue
+            tiles:
+              - name: Front Door
+                entity: lock.front_door
+                icon: mdi:door-closed-lock
+                mock_state: Locked
+              - name: Garage
+                entity: cover.garage
+                icon: mdi:garage
+                mock_state: Closed
+          - title: Climate
+            accent: green
+            tiles:
+              - name: Living Room
+                entity: sensor.living_room_temperature
+                icon: mdi:thermometer
+                mock_state: 72°
+              - name: Air Quality
+                entity: sensor.air_quality
+                icon: mdi:molecule-co2
+                mock_state: Good

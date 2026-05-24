@@ -1,0 +1,23 @@
+{
+  "name": "liquid",
+  "version": "0.1.0",
+  "description": "A Liquid Glass dashboard custom card for Home Assistant.",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "cp src/liquid-card.js dist/liquid-card.js",
+    "check": "node --check src/liquid-card.js && node --check demo/demo.js",
+    "demo": "vite demo --host 127.0.0.1"
+  },
+  "keywords": [
+    "home-assistant",
+    "lovelace",
+    "custom-card",
+    "liquid-glass",
+    "dashboard"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
